@@ -1,0 +1,148 @@
+:root {
+    --background: #f8f9fa;
+    --text: #565656;
+    --accent: #2e7d32;
+    --light: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--light);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid var(--accent);
+}
+
+h1 {
+    margin: 0;
+    color: var(--accent);
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-style: italic;
+}
+
+nav {
+    background-color: #e0e0e0;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 5px;
+}
+
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #ffb300;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.my-story {
+    text-align: center;
+}
+
+.story-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.story-image {
+    flex: 1 1 0;
+    max-width: 33%;
+}
+
+.story-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.story-text {
+    flex: 1 1 0;
+    max-width: 33%;
+    text-align: left;
+}
+
+@media (max-width: 900px) {
+    .story-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .story-image,
+    .story-text {
+        max-width: 90%;
+        margin-bottom: 30px;
+    }
+}
