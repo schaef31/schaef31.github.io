@@ -134,15 +134,68 @@ footer a:hover {
     text-align: left;
 }
 
+.club-section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 60px;
+    flex-wrap: nowrap;
+}
+
+.club-text {
+    flex: 1;
+    padding: 15px;
+}
+
+.club-image {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+}
+
+.club-image img {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 0 auto;
+    display: block;
+}
+
+.club-section.reverse {
+    flex-direction: row-reverse;
+}
+
+figcaption {
+    font-style: italic;
+    color: #666;
+    margin-top: 8px;
+}
+
 @media (max-width: 900px) {
     .story-container {
         flex-direction: column;
         align-items: center;
     }
-    
     .story-image,
     .story-text {
         max-width: 90%;
         margin-bottom: 30px;
+    }
+    .club-section,
+    .club-section.reverse {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .club-text,
+    .club-image {
+        max-width: 100%;
+        padding: 10px 0;
+    }
+    .club-image img {
+        max-width: 100%;
     }
 }
