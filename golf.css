@@ -216,12 +216,13 @@ figcaption {
 .form-row input,
 .form-row select,
 .form-row textarea {
-    flex: 1;
-    width: 100%;
+    flex: 1 1 0;
+    min-width: 0;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 .form-row textarea {
